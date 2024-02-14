@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+    {% block title %}
+        Главная страница
+    {% endblock %}
+
+    {% block content %}
+    <div class="outerwear">
+        <div class="content_1">
+            <h2><b>Верхняя одежда</b></h4>
+            <p>В нашем интернет-магазине большой выбор верхней одежды на любой вкус<br></p>
+            <button><b><a href="/outerwear" class="nav-link">Верхняя одежда</a></b></button>
+        </div>
+        <div class="content_1_img">
+            <img src="/static/img/outerwear_1.png", alt="Outerwear">
+        </div>
+    </div>
+
+    <div class="clothes">
+        <div class="content_1_img">
+            <img src="/static/img/clothes_1.png", alt="Clothes">
+        </div>
+        <div class="content_1">
+            <h2><b>Повседневная одежда</b></h4>
+            <p>Также Вас должен заинтересовать ассоримент повседневной одежды<br></p>
+            <button><b><a href="/clothes/" class="nav-link">Одежда</a></b></button>
+        </div>
+    </div>
+
+    <div class="shoes">
+        <div class="content_1">
+            <h2><b>Обувь</b></h4>
+            <p>Сезонная и демисезонная обувь по низкой цене<br></p>
+            <button><b><a href="/shoes/" class="nav-link">Обувь</a></b></button>            
+        </div>  
+        <div class="content_1_img">
+            <img src="/static/img/shoes_1.png", alt="Shoes">            
+        </div>
+    </div>
+    {% endblock %}

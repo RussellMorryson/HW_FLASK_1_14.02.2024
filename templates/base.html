@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+        {% block title %}
+            Findberries
+        {% endblock %}
+        </title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Findberries</h1>
+            <h3>Интернет-магазин одежды</h3>
+            <div class="header_menu">
+                <button><a href="/main/" class="nav-link">Главная траница</a></button>
+                <button><a href="/outerwear/" class="nav-link">Верхняя одежда</a></button>
+                <button><a href="/clothes/" class="nav-link">Одежда</a></button>
+                <button><a href="/outerwear/" class="nav-link">Обувь</a></button>
+            </div>
+        </header>
+        <div class="content">
+            {% block content %}
+                <h3>Здесь должен быть контент</h3>
+            {% endblock %}
+        </div>
+    </body>
+    <footer>
+        <div class="foot">
+            <div class = "info">
+                <h4>ИНФОРМАЦИЯ<br></h4>
+                <h5>Company@mail.ru</h5>
+                <h5>Телефон: 8 (800) 102 0300</h5>
+                <h5>Россия, Москва, ул. Тверская, 1</h5>
+            </div>
+            <div class = "about_1">
+                <h4>О нас<br></h4>
+                <h5>www.company.com<h5>
+            </div>
+        </div>
+    </footer>
+</html>
